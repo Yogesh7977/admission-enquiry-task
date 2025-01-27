@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-
+import EnqueryForm from './components/EnqueryForm';
+import { BrowserRouter as Router,
+  Routes,
+  Route
+ } from 'react-router-dom';
+ import RegisterAdmin from './components/RegisterAdmin';
+import AdminLogin from './components/AdminLogin';
+import AdminHome from './components/AdminHome';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+    <Routes >
+    <Route path="/" element={<EnqueryForm/>}/>
+    <Route path="/registerAdmin" element={<RegisterAdmin/>}/>
+    <Route path="/adminLogin" element={<AdminLogin/>}/>
+    <Route path="/adminHome" element={<AdminHome/>}/>
+    </Routes>
+    </Router>
+    </>
   );
 }
 

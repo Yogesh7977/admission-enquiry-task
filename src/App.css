@@ -7,6 +7,22 @@
   pointer-events: none;
 }
 
+form{
+  border: 2.5px solid rgb(12, 182, 6);
+  padding-top: 2em;
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-bottom: 2em;
+  border-radius: 20px;
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+form:hover{
+  box-shadow: 2px 0 30px 0 rgb(74, 223, 94);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
